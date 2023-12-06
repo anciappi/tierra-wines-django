@@ -84,6 +84,7 @@ main{
 
 .header-index{
     justify-content: flex-start;
+    /* background-image: url(static/core/assets/img/barricasRecorte.png); */
     background-image: url(static/core/assets/img/barricasRecorte.png);
 }
 
