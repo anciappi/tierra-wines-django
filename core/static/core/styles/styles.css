@@ -1,0 +1,764 @@
+
+/* Estilos importados - Nav bar */
+@import url(nav-styles.css);
+
+/* Estilos generales */
+:root{
+    /*Colores*/
+    --main-color: #222;
+
+    --arena: #FBB879;
+    --ladrillo: #C37A71;
+    --uva: #6B5B61;
+
+    --lighting-grey: #C5C5C5;
+    --light-grey: #7D7D7D;
+    --normal-grey: #343434;
+    --dark-grey: #181818;
+    --dark-grey-70: #181818dc;
+
+    /*Fuentes*/
+    --main-font: 'Playfair Display', serif;
+    --text-font: 'Barlow', sans-serif;
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: var(--main-color);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Generales */
+/* H3 */
+.title-h3{
+    margin-bottom: 2rem;
+    width: 50%;
+    font-family: var(--text-font);
+    font-size: 5rem;
+    font-weight: 100;
+    color: var(--dark-grey);
+}
+
+
+/* Main Content Styles*/
+
+.main-sect{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Stilos para Article */
+
+.card{
+    padding: 5rem auto;
+    display: flex;
+    align-items:center;
+    width: 100vw;
+    height: auto;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.header-index,.header-bodega, .card2, .card3, .card4, .card5, .card6{
+    padding: 3rem 0;
+    background-position: center;
+    background-size:cover;
+}
+
+.header-index{
+    justify-content: flex-start;
+    background-image: url(static/core/assets/img/barricasRecorte.png);
+}
+
+.header-bodega{
+    justify-content: flex-start;
+    background-image: url(static/core/assets/img/Bodega-1.jpg);
+}
+
+.card2{
+    justify-content: center;
+}
+
+.card2-section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.6rem;
+    width: 20rem;
+    height: 25rem;
+    margin: 0 1rem;
+}
+
+.card2-section a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+
+    background-color: var(--dark-grey-70);
+    color: var(--lighting-grey);
+    
+    text-decoration: none;
+    font-family: var(--text-font);
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+
+.card2-section a:hover{
+    background-color: var(--ladrillo);
+    color: var(--dark-grey);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.s1{
+    background-image: url(core/assets/img/barricas1.jpg);
+    background-size:cover;
+}
+.s2{
+    background-image: url(core/assets/img/campo-7.jpg);
+    background-size:cover;
+}
+.s3{
+    background-image: url(static/core/assets/img/vinos-de-frente.jpg);
+    background-size:cover;
+}
+.s4{
+    background-image: url(static/core/assets/img/copas.jpg);
+    background-size:cover;
+}
+
+.card3{
+    justify-content: flex-end;
+    background-image: url(static/core/assets/img/uvaRecorte.png);
+}
+
+.card4{
+    justify-content: flex-start;
+    background-image: url(static/core/assets/img/copaBn-01.png);
+    background-position: right;
+}
+
+.card4-botton{
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-family: var(--text-font);
+    font-size: 1.5rem;
+    font-weight: 300;
+    background-color: var(--ladrillo);
+    color: var(--arena);
+
+    border-radius: 1rem 0;
+    -webkit-border-radius: 1rem 0;
+    -moz-border-radius: 1rem 0;
+    -ms-border-radius: 1rem 0;
+    -o-border-radius: 1rem 0;
+}
+
+.card4-botton:hover{
+    background-color: var(--arena);
+    color: var(--ladrillo);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.card5{
+    justify-content: flex-end;
+    background-image: url(static/core/assets/img/campoBodega.png);
+}
+
+/* section Contacto */
+.card6{
+    background-image: url(static/core/assets/img/enConstruccion.png);
+}
+
+.textos{
+    margin-left: 10rem;
+    width: 40%;
+}
+
+.textos h4{ 
+    margin-bottom: .5rem;
+    font-size: 4rem;
+    color: var(--light-grey);
+    font-weight: 200;
+}
+
+.textos h2{
+    margin-bottom: .5rem;
+    font-size: 2.2rem;
+    color: var(--lighting-grey);
+    font-weight: 100;
+    letter-spacing: .2rem;
+}
+
+.textos p{
+    font-family: var(--text-font);
+    font-size: 1.6rem;
+    color: var(--lighting-grey);
+    font-weight: 200;
+    line-height: 2rem;
+    letter-spacing: .1rem;
+}
+
+.textos-izq{
+    margin-left: 10rem;
+}
+
+.textos-der{
+    margin-right: 10rem;
+    text-align: right;
+}
+
+
+.texto3{
+    background-color: #6b5b61bf;
+    padding: 3rem;
+    width: 50%;
+    height: auto;
+    border-radius: 6rem 0rem ;
+    -webkit-border-radius: 6rem 0rem ;
+    -moz-border-radius: 6rem 0rem ;
+    -ms-border-radius: 6rem 0rem ;
+    -o-border-radius: 6rem 0rem ;
+}
+
+.texto3 h4{
+    color: var(--arena);
+}
+.texto3 p{
+    font-weight: 200;
+}
+
+
+.texto4{
+    width: 50%;
+}
+
+.texto4 h4{
+    color: var(--ladrillo);
+}
+
+.texto4 h2{
+    color: var(--uva);
+}
+
+.texto4 p{
+    color:var(--main-color);
+    margin-bottom: 2rem;   
+}
+
+.texto5{
+    width: 45%;
+}
+
+.texto5 h4{
+    color: var(--arena);
+}
+
+.texto5 h2{
+    font-size: 2rem;
+    color: var(--ladrillo);
+    font-weight: 100;
+}
+
+
+
+/* Footer Styles*/
+
+.main-footer{
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--dark-grey);
+    color: var(--normal-grey);
+
+    font-family: var(--text-font);
+    font-weight: 100;
+}
+
+.main-footer article {
+    display: flex;
+    justify-content: space-around;
+    width: 100rem;
+    padding: 2rem;
+}
+
+.main-footer ul{
+    list-style: none;
+}
+
+.main-footer li{
+    border-left: .2rem solid var(--arena);
+    padding: .5rem;
+}
+
+.main-footer a{
+    padding-left: 1rem;
+    font-family: var(--text-font);
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--ladrillo);
+}
+
+
+/* Styles - Bodega */
+
+.bodega-card{
+    height: 2000px;
+}
+
+.header-bodega{
+    border-radius: 0 0 0 5rem;
+    width: 100%;
+    -webkit-border-radius: 0 0 0 5rem;
+    -moz-border-radius: 0 0 0 5rem;
+    -ms-border-radius: 0 0 0 5rem;
+    -o-border-radius: 0 0 0 5rem;
+}
+
+.bodega-content{
+    max-width: 120rem;
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    padding: 5rem;
+    background-image: url(static/core/assets/img/campo-5.jpg);
+    background-position:bottom;
+    background-size:cover;
+}
+
+.bodega-content h3{
+    width: 70%;
+}
+
+.bodega-content p{
+    width: 70%;
+    font-family: var(--text-font);
+    font-size: 2rem;
+    color: var(--normal-grey);
+}
+
+
+.bodega-table{
+    border-collapse: collapse;
+    margin: 2rem 0 ;
+    padding: 2rem;
+    font-family: var(--text-font);
+    color: var(--dark-grey-70);
+    font-size: 1.6rem;
+
+    background-color: #22222272;
+}
+
+
+.bodega-table th {
+    color: var(--dark-grey);
+    padding: 1rem;
+    text-align: center;
+    border: .2rem solid #222;
+}
+.bodega-table td {
+    padding: 1rem;
+    text-align: center;
+    border: .2rem solid #222;
+}
+
+/* styles - Varietales */
+
+.varietales-content{
+    background-image: url(static/core/assets/img/campo-2.jpg); 
+}
+
+.varietales-content article {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+}
+
+.varietales-content h3{
+    text-align: right;
+    width: 70%;
+    color: #fff;
+}
+
+.varietales-content p{
+    text-align: right;
+    width: 70%;
+    color:var(--arena);
+}
+
+
+
+/* styles - Contacto */
+
+.contact-sec{
+    display: flex;
+    align-items: center;
+}
+
+.contact-content{
+    padding: 2rem;
+    max-width: 120rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: var(--dark-grey);
+    background-image: url(static/core/assets/img/campo-7.jpg);
+    background-position:top;
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+
+.contact-content h3{
+ text-align: center;
+}
+
+.contact-map{
+    width: 100%;
+}
+
+
+/* Contact form */
+
+form{
+    width: 120rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input, textarea{
+    width: 50%;
+    padding: 1.5rem;
+    margin: .5rem;
+
+    background-color: #ffffffc8;
+    border-radius: 1rem 0 ;
+    -webkit-border-radius: 1rem 0 ;
+    -moz-border-radius: 1rem 0 ;
+    -ms-border-radius: 1rem 0 ;
+    -o-border-radius: 1rem 0 ;
+
+    font-family: var(--text-font);
+    color: var(--dark-grey);
+    font-size: 1.7rem;
+    font-weight: 400;
+    
+}
+
+form button{
+    width: 50%;
+    padding: 1.2rem;
+    margin: .5rem;
+    
+    border-radius: 1rem 0;
+    -webkit-border-radius: 1rem 0;
+    -moz-border-radius: 1rem 0;
+    -ms-border-radius: 1rem 0;
+    -o-border-radius: 1rem 0;
+
+    font-family: var(--text-font);
+    font-size: 1.6rem;
+    background-color: #fff;
+    color: var(--normal-grey);
+}
+
+
+/* Responsive - Tablet*/
+
+/* Nav responsive */
+@media(max-width:650px) {
+    /* media query para MOBILE */
+  
+        .nav-logo{
+            margin-left: 1rem;
+            width: 80%;
+        }
+        .main-nav ul{
+            width: 100%;
+            height: calc(100% - 60px);
+            overflow-y: auto;
+        }
+        .navMenu {
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+          background-color: #000;
+          position: fixed;
+          top: 80px;
+          padding: 20px 0;
+          left: 100%;
+          transition: left 1s;
+        }
+      
+        .navMenuItem {
+          line-height: 50px;
+        }
+      
+       .navToggle {
+        width: 20%;
+        display: block;
+        }
+      
+        .navMenuVisible {
+          left: 0;
+        }
+      
+        .navToggle:focus:not(:focus-visible) {
+          outline: none;
+        }
+    }
+
+@media (max-width: 768px) {
+
+    /* Stilos para Article */
+    
+    .card{
+        flex-wrap: wrap;
+    }
+
+    .card2-section{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-color: var(--dark-grey);
+        color: var(--arena);
+        font-size: 1.6rem;
+        width: 80%;
+        height: 25rem;
+        margin: 1rem 1rem;
+    }
+
+    .s1{
+        width: 30%;
+    }
+    .s2{
+        width: 50%;
+    }
+    .s3{
+        width: 50%;
+    }
+    .s4{
+        width: 30%;
+    }
+
+    .card3{
+        justify-content: flex-end;
+    }
+    
+    .card4{
+        background-position: right;
+    }
+
+    .card5{
+        justify-content: flex-end;
+        background-position: right;
+    }
+    
+    /* section Contacto */
+    
+    .textos{
+        margin-left: 10rem;
+        width: 50%;
+    }
+    
+    .textos h4{ 
+        margin-bottom: .5rem;
+        font-size: 4rem;
+        color: var(--light-grey);
+        font-weight: 200;
+    }
+    
+    .textos h2{
+        margin-bottom: .5rem;
+        font-size: 2.2rem;
+        color: var(--lighting-grey);
+        font-weight: 100;
+        letter-spacing: .2rem;
+    }
+    
+    .textos p{
+        font-family: var(--text-font);
+        font-size: 1.6rem;
+        color: var(--lighting-grey);
+        font-weight: 200;
+        line-height: 2rem;
+        letter-spacing: .1rem;
+    }
+
+    .texto3{
+        width: 80%;
+    }
+    
+    .texto4{
+        width: 50%;
+    }
+    
+    .texto4 h4{
+        color: var(--ladrillo);
+    }
+    
+    .texto4 h2{
+        color: var(--uva);
+    }
+    
+    .texto4 p{
+        color:var(--main-color);
+        margin-bottom: 2rem;   
+    }
+    
+    .texto5{
+        width: 60%;
+    }
+    
+    .texto5 h4{
+        color: var(--arena);
+    }
+    
+    .texto5 h2{
+        font-size: 2rem;
+        color: var(--ladrillo);
+        font-weight: 100;
+    }
+
+    .bodega-content h3{
+        width: 90%;
+    }
+
+    .bodega-content p{
+        width: 90%;
+    }
+
+    input, textarea{
+        width: 40%;
+    }
+    
+    form button{
+        width: 40%;
+    }
+    
+    .main-footer a{
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width:576px) {
+    
+    .card{
+        flex-wrap: wrap;
+    }
+
+    .s1{
+        width: 100%;
+    }
+    .s2{
+        width: 100%;
+    }
+    .s3{
+        width: 100%;
+    }
+    .s4{
+        width: 100%;
+    }
+
+    .card3{
+        justify-content: center;
+    }
+    
+    .card4{
+        background-position: right;
+    }
+
+    .card5{
+        justify-content: flex-end;
+        background-position: right;
+    }
+    
+    /* section Contacto */
+    .card6{
+        background-image: url(static/core/assets/img/enConstruccion.png);
+    }
+    
+    .textos{
+        margin-left: 10rem;
+        width: 100%;
+    }
+
+    .textos-der{
+        margin: 0;
+    }
+
+    .textos-izq{
+        margin: 0;
+        padding: 3rem;
+    }
+
+    .texto3{
+        width: 100%;
+    }
+    
+    .texto4{
+        width: 100%;
+        background-color: #ffffffab;
+    }
+    
+    .texto4 h4{
+        color: var(--ladrillo);
+    }
+    
+    .texto4 h2{
+        color: var(--uva);
+    }
+    
+    .texto4 p{
+        color:var(--main-color);
+        margin-bottom: 2rem;   
+    }
+    
+    .texto5{
+        width: 100%;
+        padding: 3rem;
+    }
+    
+    .texto5 h4{
+        color: var(--arena);
+    }
+    
+    .texto5 h2{
+        font-size: 2rem;
+        color: var(--ladrillo);
+        font-weight: 100;
+    }
+
+}

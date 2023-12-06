@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'core/styles/styles.css'%}">
+        
+    <!-- Link fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'core/assets/icons/favicon_io/favicon-32x32.png'%}" >
+
+    <!-- Link javascript - Nav -->
+    <!-- <script defer src="/js/nav.js"></script> -->
+
+    <!-- Link para el icono del menu hamburguesa  -->
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    
+    <title>Tierra | Wine & Whisky</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="main-nav">
+            <div class="nav-logo">  
+                <img src="{% static 'core/assets/logo/Tierra Wine & Whisky Logo-02.png' %}" height="100%" width="auto" alt="logo-tierra-wines" url="{% url 'home' %}">
+            </div>
+    <!-- Boton del menu hamburguesa -->
+            <button class="navToggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Animación en los links -->
+            <ul class="navMenu">
+                <li class="navMenuItem"><a href="{% url 'home' %}">Inicio</a></li>
+                <li class="navMenuItem"><a href="{% url 'bodega' %}">Bodega</a></li>
+                <li class="navMenuItem"><a href="{% url 'varietales' %}">Varietales</a></li>
+                <li class="navMenuItem"><a href="{% url 'contacto' %}">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <!-- Inicio del main content -->
+    {% block content %}
+    
+    {% endblock %}
+    <!-- Fin del main content -->
+
+    <footer>
+        <section class="main-footer">
+            <article>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">Lorem</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Bodega Tierra</a></li>
+                    <li><a href="#">Dirección: Ruta 1234 | Mendoza</a></li>
+                    <li><a href="#">Argentina</a></li>
+                </ul>
+                <ul class="redes">                    
+                    <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram" display: inline-block></a>
+                    <a href="https://facebook.com/" target="_blank" class="fa fa-facebook" display:inline-block></a>
+                    <a href="https://web.whatsapp.com/" target="_blank" class="fa fa-whatsapp" display:inline-block></a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin" display:inline-block></a>
+                </ul>
+            </article>
+        </section>
+    </footer>
+    
+</body>
+</html>
