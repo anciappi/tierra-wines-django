@@ -44,6 +44,7 @@ THIRD_PARTY_APPS = []
 
 OWN_APPS = [
     'core',
+    'experiencias',
     ]
 
 
