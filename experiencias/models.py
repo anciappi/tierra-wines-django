@@ -19,4 +19,4 @@ class Experiencia(models.Model):
         ordering = ['-fecha']
 
     def __str__(self):
-        return [self.titulo, self.autor]
+        return self.titulo

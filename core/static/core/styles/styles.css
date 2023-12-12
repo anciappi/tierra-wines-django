@@ -78,23 +78,24 @@ main{
 
 .header-index,.header-bodega, .card2, .card3, .card4, .card5, .card6{
     padding: 3rem 0;
-    background-position: center;
-    background-size:cover;
 }
 
 .header-index{
     justify-content: flex-start;
-    /* background-image: url(static/core/assets/img/barricasRecorte.png); */
-    background-image: url(static/core/assets/img/barricasRecorte.png);
+}
+
+.header-index img{
+    width: 100px,
 }
 
 .header-bodega{
     justify-content: flex-start;
-    background-image: url(static/core/assets/img/Bodega-1.jpg);
+    ;
 }
 
 .card2{
     justify-content: center;
+    width: 800px;
 }
 
 .card2-section{
@@ -134,7 +135,7 @@ main{
 }
 
 .s1{
-    background-image: url(core/assets/img/barricas1.jpg);
+    /* background-image: url(core/assets/img/barricas1.jpg); */
     background-size:cover;
 }
 .s2{
@@ -350,7 +351,7 @@ main{
     flex-direction: column;
     align-items: normal;
     padding: 5rem;
-    background-image: url(static/core/assets/img/campo-5.jpg);
+    /* background-image: url(static/core/assets/img/campo-5.jpg); */
     background-position:bottom;
     background-size:cover;
 }
@@ -358,6 +359,8 @@ main{
 .bodega-content h3{
     width: 70%;
 }
+
+
 
 .bodega-content p{
     width: 70%;
@@ -446,6 +449,13 @@ main{
 
 .contact-map{
     width: 100%;
+}
+
+/* styles - experiencias */
+
+.exp-sec{
+    display: flex;
+    align-items: center;
 }
 
 
