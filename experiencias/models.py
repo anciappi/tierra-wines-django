@@ -7,10 +7,12 @@ from django.contrib.auth.models import User
 
 class Experiencia(models.Model):
     titulo = models.CharField(max_length=100, verbose_name='Título')
-    autor = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name='Autor')
-    fecha = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
+    name = models.CharField(max_length=100, verbose_name='Nombre')
+    last_name = models.CharField(max_length=100, verbose_name='Apellido')
+    mail = models.EmailField(verbose_name='Mail')
     contenido = models.TextField(max_length=1000, verbose_name='Contenido')
     imagen = models.ImageField(upload_to='experiencias', null=True, blank=True)
+    fecha = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
 
 
     class Meta:
@@ -19,4 +21,4 @@ class Experiencia(models.Model):
         ordering = ['-fecha']
 
     def __str__(self):
-        return self.titulo
+        return self.titulo + ' | ' + self.name

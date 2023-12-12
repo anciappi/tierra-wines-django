@@ -10,26 +10,26 @@
 
 <!-- Formulario de comentarios -->
 <article class="conteiner row justify-content-center bg-dark py-5">
-  <p class="h2 text-center mb-5">Contanos tu experiencia</p>
+  <p class="h1 text-center mb-5 text-white">Contanos tu experiencia</p>
+  <p class="h3 text-center mb-5 text-white">Tu opinion nos interesa!</p>
   <form action="" method="post" class="text-center">
     {% csrf_token %}
-    <input type="text" placeholder="Titulo">
-    <input type="text" placeholder="Nombre & Apellido">
-    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" ></textarea>
-    <button type="submit"> Enviar comentario </button>
+    {{form}}
+    <button>Comentar</button>
   </form>
 </article>
 
 <!-- Seccion de comentarios -->
 <section class="container-fluid row justify-content-center bg-dark m-0 pb-3">
+  <p class="h2 text-center mt-5 text-white">Personas que nos visitaron!</p>
   {% for exp in exp %}
-  <div class="col-sm-6 card bg-secondary text-white my-5 mx-2 px-3 text-center" style="width: 30rem; height: auto">
-    <img src="{{exp.imagen.url}}" class="card-img-top rounded  my-3 "  alt="foto de comentario">
+  <div class="col-sm-6 card bg-secondary text-white my-5 mx-2 px-3 py-4 text-center" style="width: 30rem; height: auto">
+    
     <div class="card-body">
-      <h5 class="card-title">{{exp.titulo}}</h5>
-      <h5 class="card-title-2">{{exp.autor}}</h5>
+      <h2 class="card-title">{{exp.titulo}}</h2>
+      <h5 class="card-title-2">{{exp.name}} {{exp.last_name}}</h5>
       <p class="card-text">{{exp.contenido}}</p>
-      <p class="card-text">{{exp.fecha}}</p>
+      <p class="card-text">Post: {{exp.fecha}}</p>
     </div>
   </div>
   {% endfor %}

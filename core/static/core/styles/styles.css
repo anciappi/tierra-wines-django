@@ -461,7 +461,7 @@ main{
 
 /* Contact form */
 
-form{
+.contact-form{
     width: 120rem;
     display: flex;
     flex-direction: column;
@@ -469,7 +469,7 @@ form{
     align-items: center;
 }
 
-input, textarea{
+.contact-form input, textarea{
     width: 50%;
     padding: 1.5rem;
     margin: .5rem;
@@ -488,7 +488,7 @@ input, textarea{
     
 }
 
-form button{
+.contact-form button{
     width: 50%;
     padding: 1.2rem;
     margin: .5rem;
