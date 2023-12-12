@@ -135,30 +135,30 @@ main{
 }
 
 .s1{
-    /* background-image: url(core/assets/img/barricas1.jpg); */
+    
     background-size:cover;
 }
 .s2{
-    background-image: url(core/assets/img/campo-7.jpg);
+    
     background-size:cover;
 }
 .s3{
-    background-image: url(static/core/assets/img/vinos-de-frente.jpg);
+    
     background-size:cover;
 }
 .s4{
-    background-image: url(static/core/assets/img/copas.jpg);
+    
     background-size:cover;
 }
 
 .card3{
     justify-content: flex-end;
-    background-image: url(static/core/assets/img/uvaRecorte.png);
+    
 }
 
 .card4{
     justify-content: flex-start;
-    background-image: url(static/core/assets/img/copaBn-01.png);
+    
     background-position: right;
 }
 
@@ -189,13 +189,10 @@ main{
 }
 .card5{
     justify-content: flex-end;
-    background-image: url(static/core/assets/img/campoBodega.png);
+    
 }
 
 /* section Contacto */
-.card6{
-    background-image: url(static/core/assets/img/enConstruccion.png);
-}
 
 .textos{
     margin-left: 10rem;
@@ -351,7 +348,6 @@ main{
     flex-direction: column;
     align-items: normal;
     padding: 5rem;
-    /* background-image: url(static/core/assets/img/campo-5.jpg); */
     background-position:bottom;
     background-size:cover;
 }
@@ -396,9 +392,7 @@ main{
 
 /* styles - Varietales */
 
-.varietales-content{
-    background-image: url(static/core/assets/img/campo-2.jpg); 
-}
+
 
 .varietales-content article {
     display: flex;
@@ -437,7 +431,6 @@ main{
     align-items: center;
     margin-bottom: 1rem;
     background-color: var(--dark-grey);
-    background-image: url(static/core/assets/img/campo-7.jpg);
     background-position:top;
     background-size:auto;
     background-repeat: no-repeat;
@@ -717,9 +710,7 @@ main{
     }
     
     /* section Contacto */
-    .card6{
-        background-image: url(static/core/assets/img/enConstruccion.png);
-    }
+   
     
     .textos{
         margin-left: 10rem;
