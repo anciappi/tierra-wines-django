@@ -13,7 +13,6 @@ def experiencias(request):
         'form': ExpForm,
         })
     else:
-       print(request.POST)
        form = ExpForm(request.POST, request.FILES)
        if form.is_valid():
            form.save()
