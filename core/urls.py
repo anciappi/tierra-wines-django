@@ -1,10 +1,13 @@
-from django.urls import path
-from .views import home, bodega, varietales, contacto
+from django.urls import path, include
+from .views import HomeView, BodegaView, VarietalesView, ContactoView, RegisterView
 
 urlpatterns = [
-    path('', home, name='home'),
-    path('bodega/', bodega, name='bodega'),
-    path('varietales/', varietales, name='varietales'),
-    path('contacto/', contacto, name='contacto'),
+    path('', HomeView.as_view(), name='home'),
+    path('bodega/', BodegaView.as_view(), name='bodega'),
+    path('varietales/', VarietalesView.as_view(), name='varietales'),
+    path('contacto/', ContactoView.as_view(), name='contacto'),
+
+    #REGISTRO
+    path("register/", RegisterView.as_view(), name="registro"),
 
 ]
