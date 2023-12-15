@@ -4,6 +4,7 @@
 
 {% block content %}
 
+
 <main>
     <section class="main-sect ">
         <article class="header-index card" style="background-image: url(static/core/assets/img/barricasRecorte.png); background-size: cover ">
@@ -13,7 +14,7 @@
         <!-- Animación en los Botones -->
         <article class="card2 card">
                 <section class="card2-section s1" style="background-image: url(static/core/assets/img/barricas1.jpg); background-size: cover">
-                    <a href="#">Visita Guiada</a>
+                    <a href="{% url 'experiencias' %}">Experiencias</a>
                 </section>
                 <section class="card2-section s2" style="background-image: url(static/core/assets/img/campo-7.jpg); background-size: cover">
                     <a href="{% url 'bodega' %}">Bodega</a>

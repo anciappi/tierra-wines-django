@@ -2,35 +2,100 @@
 {% load static %}
 
 {% block content %}
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
 
-<main>
-    <section class="bodega-content" style="background-image: url(/static/core/assets/img/campo-5.jpg); background-size: cover" >
-        <article>
-            <h3 class="title-h3">Bienvenidos <br>a nuestra bodega</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis repellendus cum quasi blanditiis sint quae aliquam! Repudiandae, sunt expedita. Voluptates dolor ipsa consequuntur, debitis optio sunt fugiat necessitatibus incidunt nisi!
+<section class="container-fluid bg-dark">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <img src="/media/campoBodega.png" class="img-fluid mb-5" alt="...">
+        </div>
+    </div>
+    <div class="row">
+        <!-- Columna 1 -->
+        <div class="col-md-4 text-center">
+            <h1 class="text-light display-2 mt-5 mb-5">Bodega</h1>
+            <p class="text-light h1 mt-5">
+                Descubre el encanto de nuestra bodega en Mendoza.
             </p>
-        </article>
-        <article>
-            <table class="bodega-table">
-                <tr>
-                    <th>Superficie</th>
-                    <th>Varietal</th>
-                    <th>Producción anual</th>
-                    <th>Enologo principal</th>
-                    <th>Zona</th>
-                </tr>
-                <tr>
-                    <td>500ha</td>
-                    <td>Mabelc</td>
-                    <td>700.000Lts</td>
-                    <td>Carlos</td>
-                    <td>Norte Mdz</td>
-                </tr>
-                
-            </table>
-        </article>
-    </section>
+            <p class="text-light fs-5 mt-5">Descubre el encanto de nuestra bodega en Mendoza, donde cada uva cuenta su historia. Sumérgete en la magia de la vinificación y déjate envolver por los aromas y sabores únicos. Te invitamos a explorar un viaje sensorial inolvidable entre viñedos y barricas. ¡Bienvenido a una experiencia vinícola única en el corazón de Mendoza!</p>
+            <p class="text-light fs-5 mt-5">Descubre el encanto de nuestra bodega en Mendoza, donde cada uva cuenta su historia. Sumérgete en la magia de la vinificación y déjate envolver por los aromas y sabores únicos. Te invitamos a explorar un viaje sensorial inolvidable entre viñedos y barricas. ¡Bienvenido a una experiencia vinícola única en el corazón de Mendoza!</p>
+            <!-- Inicio Acordeon -->
+            <p class="text-light h1 mt-5">
+                Algunos datos curiosos
+            </p>
+            <div class="accordion mt-5" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Superficie
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Tierra Wines</strong> 
+                      La bodega se extiende ampliamente por más de 500ha, ofreciendo una generosa superficie para almacenar mercancías de manera eficiente. Con sus espacios bien diseñados, el lugar se convierte en un activo estratégico para la logística y almacenamiento. Un lienzo funcional que optimiza el flujo de productos.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Varietales
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Tierra Wines ofrece distintos varietales</strong> Disfrutar de un buen vino es sumergirse en la diversidad de varietales. Desde la intensidad del Cabernet Sauvignon, con sus notas a frutas negras, hasta la elegancia del Chardonnay, con sus toques de vainilla. No olvidemos la frescura del Sauvignon Blanc, con su vivaz acidez y aromas herbáceos. Cada varietal, una experiencia única que cautiva el paladar y enriquece el disfrute de los distintos matices del mundo del vino.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Producción Anual
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>+ de 50.000 litros!</strong> En el corazón de nuestra bodega, cada año nos enorgullece presentar una producción anual de 50,000 litros de vino, divididos magistralmente entre tres varietales excepcionales. La robusta expresión del Cabernet Sauvignon, la elegancia seductora del Chardonnay y la frescura vibrante del Sauvignon Blanc forman nuestro trío vinícola. Este balance cuidadoso entre variedades nos permite ofrecer a nuestros amantes del vino una experiencia única, donde cada sorbo es una celebración de la diversidad y la calidad que define nuestra pasión por la vinificación.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fin acordeon -->
+            
+        </div>
+
+        <!-- Columna 2 -->
+
+        <div class="col-md-8 text-center">
+            <img src="/media/campo-2.jpg" class="img-fluid mb-5" alt="...">    
+        </div>
+        
+        <!-- Columna 3 -->
+
+        <div class="col-md-3 text-center">
+            <img src="/media/Bodega-1.jpg" class="img-fluid mb-5" alt="...">
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="/media/campo-7.jpg" class="img-fluid mb-5" alt="...">
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="/media/barricas.jpg" class="img-fluid mb-5" alt="...">
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="/media/campo-1.jpg" class="img-fluid mb-5" alt="...">
+        </div>
+              
+    </div>
+</div>
+</div>
     
-</main>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 {% endblock %}
